@@ -441,6 +441,19 @@
               </tr>
             </table>
 
+            <table class="row">
+              <tr>
+                <td class="customer-info__item">
+                  <h4>Special instructions</h4>
+                  {% if note %}
+                  <p>{{ note }}</p>
+                  {% else %}
+                  <p>None</p>
+                  {% endif %}
+                </td>
+              </tr>
+            </table>
+
             </td>
           </tr>
         </table>
