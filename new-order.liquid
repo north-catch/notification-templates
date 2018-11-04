@@ -24,6 +24,13 @@ i<p>Hello {{ shop_name }},</p>
 <p>{{ shipping_address.country }}</p>
 <p>{{ shipping_address.phone }}{% endif %}</p>
 <p></p>
+<p><b>Special instructions:</b></p>
+{% if note %}
+<p>{{ note }}</p>
+{% else %}
+<p>None</p>
+{% endif %}
+<p></p>
 
 {% if shopify_shipping_enabled %}
 <p>Save time and money by <a href="{{ fulfillment_url }}">fulfilling with Shopify Shipping</a></p>
